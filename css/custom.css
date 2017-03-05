@@ -1,0 +1,81 @@
+html {
+	font-size: 1em;
+}
+
+body{
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-weight: bold;
+}
+
+.row{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo{
+	padding-top: 5%;
+	padding-bottom: 10%;
+	display: block;
+	margin: 0 auto;
+}
+
+.div_header_text{
+	transform: translateY(20%);
+	text-align: left;
+	padding: 2%;
+	padding-left: 5%;
+}
+
+.div_background_logo{
+	width: 100%;
+}
+
+#background_logo{
+	position: absolute;
+	margin: 0 auto;
+	opacity: 0.25;
+	width: inherit;
+	left: 0;
+	background-repeat: repeat-y;
+	border: 1px solid red;
+}
+/*------------------No gutter on products row---------------------*/
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/*------------------End of No gutter on products row---------------------*/
+
+.products{
+	clear: both;
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10%;
+	border: 1px solid green;
+}
+
+/*------------------Break points---------------------*/
+
+@media (min-width: 200px) and (max-width: 767px){
+	#logo{
+		padding-bottom: 0;
+	}
+/*------------------alignment of the header text to center of the row---------------------*/
+	.row{
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.div_header_text{
+		transform: translateY(0);
+		width: 100%;
+	}
+	
+	.div_header_text h2, p{
+		text-align: center;
+	}
+}
+/*------------------end of  of the header text to center of the row---------------------*/
